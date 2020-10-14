@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentViewPager"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
+        style="@style/basic_app_bar_layout">
+
+        <androidx.appcompat.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            style="@style/basic_toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Создание тренировки"
+                android:fontFamily="@font/font_new"
+                android:textColor="#fff"
+                android:textSize="@dimen/size_toolbar_text_normal_screen"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fg_view_pager_exec_tab_layout"
+            android:layout_width="match_parent"
+            app:tabIndicatorHeight="3dp"
+            app:tabPaddingBottom="8dp"
+            app:tabPaddingTop="15dp"
+            app:tabBackground="@color/md_light_blue_A700"
+            app:tabTextColor="#fff"
+            app:tabIndicatorColor="#fff"
+            app:tabMode="fixed"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/fg_view_pager_exec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

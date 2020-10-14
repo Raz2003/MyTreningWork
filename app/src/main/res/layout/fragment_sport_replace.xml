@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentSportReplace">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/md_light_blue_A700"
+            app:layout_scrollFlags="enterAlways|scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/app_name"
+                style="@style/main_text_toolbar"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/bg_home"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/genderImageSport"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/ic_person_sign"
+                    app:civ_border_color="#0183D5"
+                    app:civ_border_width="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/gender"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/female_bg_white"
+                    app:layout_constraintBottom_toBottomOf="@+id/genderImageSport"
+                    app:layout_constraintEnd_toEndOf="@+id/genderImageSport" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Пользователь"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="17dp"
+                    app:layout_constraintEnd_toEndOf="@+id/genderImageSport"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/genderImageSport"
+                    app:layout_constraintTop_toBottomOf="@+id/genderImageSport" />
+
+                <TextView
+                    android:id="@+id/your_nick_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="nick"
+                    android:textColor="@color/md_white_1000"
+                    android:paddingBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="54dp"
+                    android:text="Просто сделай это! Just do it!"
+                    android:textColor="@color/md_light_blue_A700"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:textColor="@color/md_light_blue_700"
+                    android:id="@+id/text_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Разделы с упражнениями"
+                    android:textSize="15dp"
+                    android:layout_below="@id/txt_dashboard"/>
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                android:columnOrderPreserved="false"
+                android:alignmentMode="alignMargins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:backgroundTint="@color/md_light_blue_A700"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Отжимания"
+                            android:textSize="15dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_marginEnd="30dp"
+                            app:borderWidth="0dp"
+                            app:elevation="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/btnPushAdd"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#fff"
+                            android:src="@drawable/stick_man_push_ups"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:backgroundTint="@color/md_light_blue_A700"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Подтягивания"
+                            android:textSize="15dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="5dp"
+                            app:borderWidth="0dp"
+                            app:elevation="0dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/btnPullAdd"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#fff"
+                            android:src="@drawable/ic_pull_ups"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:backgroundTint="@color/md_light_blue_A700"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Создать \nтренировку "
+                            android:textSize="15dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="5dp"
+                            app:borderWidth="0dp"
+                            app:elevation="0dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/btnCreateTraining"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#fff"
+                            android:src="@drawable/ic_pull_ups"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

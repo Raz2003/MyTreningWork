@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activityes.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/RegisterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/md_light_blue_A700"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/register_input_email"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/regist_ed_text"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:hint="ваш email"
+        android:maxEms="10"
+        android:textColorHint="@color/md_light_blue_A700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterToolbar" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/register_input_password"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/regist_ed_text"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="ваш пароль"
+        android:inputType="textPassword"
+        android:maxEms="10"
+        android:textColorHint="@color/md_light_blue_A700"
+        app:layout_constraintEnd_toEndOf="@+id/register_input_email"
+        app:layout_constraintStart_toStartOf="@+id/register_input_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_input_email" />
+
+    <Button
+        android:text="регистрация"
+        android:id="@+id/register_btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_sign"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:background="@drawable/bg_buttom_regist"
+        android:backgroundTint="@color/md_light_blue_A700"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/register_btn_sign"
+        app:layout_constraintStart_toStartOf="@+id/register_btn_sign"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn_sign" />
+
+    <Button
+        android:id="@+id/register_btn_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/bg_buttom_regist"
+        android:text="авторизация"
+        android:backgroundTint="@color/md_light_blue_A700"
+        app:layout_constraintEnd_toEndOf="@+id/register_input_password"
+        app:layout_constraintStart_toStartOf="@+id/register_input_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_input_password" />
+
+    <ImageView
+        android:id="@+id/image_view_lock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/lock"
+        app:layout_constraintBottom_toBottomOf="@+id/register_btn_sign"
+        app:layout_constraintStart_toEndOf="@+id/register_btn_sign"
+        app:layout_constraintTop_toTopOf="@+id/register_btn_sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

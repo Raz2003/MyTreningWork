@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Для large screen-->
+    <dimen name="large_nick_text">35dp</dimen>
+    <dimen name="large_main_board_text">35dp</dimen>
+    <dimen name="large_main_board_value_text">25dp</dimen>
+    <dimen name="large_name_app">70sp</dimen>
+
+    <!--SIZE-NORMAL-->
+    <dimen name="small_text_for_normal_screen">15sp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="large_size">19sp</dimen>
+    <dimen name="margin_very_small">5dp</dimen>
+    <dimen name="size_toolbar_text_normal_screen">35sp</dimen>
+
+</resources>

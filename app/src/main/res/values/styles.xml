@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/md_light_blue_A700</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/md_light_blue_A700</item>
+    </style>
+
+    <!--In large size screen-->
+
+    <style name="nick_large_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/large_nick_text</item>
+    </style>
+
+    <style name="large_exec_main_board_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/large_main_board_text</item>
+    </style>
+
+    <style name="large_main_board_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/large_main_board_value_text</item>
+        <item name="android:textColor">@color/md_light_blue_A400</item>
+    </style>
+
+    <style name="grid_layout_1_row_3_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:columnCount">3</item>
+        <item name="android:rowCount">1</item>
+    </style>
+
+    <style name="card_view_board_exec">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="large_text_for_board_exec">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/md_light_blue_A700</item>
+    </style>
+
+    <style name="large_text_for_board_exec_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/md_light_blue_A700</item>
+    </style>
+
+    <style name="card_view_exec">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:backgroundTint">@color/md_light_blue_A400</item>
+    </style>
+
+    <style name="grid_layout_3_column">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alignmentMode">alignMargins</item>
+        <item name="android:columnCount">3</item>
+        <item name="android:columnOrderPreserved">false</item>
+        <item name="android:rowCount">1</item>
+    </style>
+
+    <style name="floating_btn_leader_board">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:backgroundTint">#fff</item>
+    </style>
+
+    <!--In normal size screen-->
+
+    <style name="small_text_for_card_view_normal_screen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/small_text_for_normal_screen</item>
+        <item name="android:textColor">@color/md_light_blue_A400</item>
+    </style>
+
+    <style name="small_text_view_normal_screen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/md_light_blue_A400</item>
+    </style>
+
+    <style name="normal_text_view_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="small_text_value_for_card_view_normal_screen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/md_light_blue_A700</item>
+    </style>
+
+    <style name="def_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="basic_floating_action_btn">
+        <item name="borderWidth">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--RecyclerView-->
+    <style name="vertical_rv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+
+    </style>
+
+    <style name="basic_progress_bar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="basic_app_bar_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="basic_toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/md_light_blue_A700</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="main_text_toolbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/font_new</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+</resources>

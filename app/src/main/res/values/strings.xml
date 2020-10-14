@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Спортик</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_srt_data">Даты</string>
+    <string name="push_ups">Отжимания</string>
+    <string name="day">Дни</string>
+    <string name="score">Очки</string>
+    <string name="raiting">Рейтинг</string>
+    <string name="all_day">За всё время</string>
+    <string name="averige_value">Сред. знач.</string>
+    <string name="one_day">за 1 день</string>
+    <string name="zero">0</string>
+    <string name="name_app">Спортик</string>
+    <string name="def_user_name">Артём Зарниын</string>
+    <string name="pull_ups">Подтягивания</string>
+    <string name="name_training_change">Название тренировки: Default</string>
+    <string name="list_exec_empty">Список упражнений пуст!</string>
+
+    <!--MSG SNACK BAR-->
+    <string name="task_complete">Вы выполнили свою цель!</string>
+    <string name="password_nor_valid">Пароль должен содержать больше 8 символов!</string>
+    <string name="register_error">Произошла ошибка при регистрации!</string>
+    <string name="register_successful">Регистация успешно завершена!</string>
+    <string name="complete_load_data">Загрузка успешно завершена!</string>
+    <string name="error_load_data">Произошла ошибка при загрузке данных!</string>
+    <string name="empty_name_or_empty_load_data">Пустое имя или выбранно меньше 2х упражнений!</string>
+
+</resources>

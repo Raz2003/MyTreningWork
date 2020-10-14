@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentCreateTraining">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/bg_home"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fg_create_tr_name_new_command"
+                        android:text="@string/name_training_change"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        style="@style/def_text_view" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fg_create_tr_btn_new_name_tr"
+                        app:borderWidth="0dp"
+                        app:elevation="0dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_very_small"
+                        app:backgroundTint="#fff"
+                        android:src="@drawable/ic_settings_change"
+                        style="@style/basic_floating_action_btn" />
+
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerViewCreateExec"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/item_training_exec"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/def_text_view"
+                android:id="@+id/fg_create_tr_tv_list"
+                android:text="@string/list_exec_empty"
+                android:textSize="@dimen/large_size"
+                android:textColor="@color/md_light_blue_A700"
+                android:layout_margin="@dimen/margin_normal"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerViewShowTaskMyTraining"
+                android:orientation="vertical"
+                style="@style/vertical_rv"
+                tools:listitem="@layout/item_save_exec" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fg_create_tr_btn_save"
+                    android:visibility="visible"
+                    style="@style/basic_floating_action_btn"
+                    app:backgroundTint="#fff"
+                    app:elevation="0dp"
+                    app:fab_colorPressed="#fff"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_check"/>
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/fg_create_tr_progress_bar_load"
+                    style="@style/basic_progress_bar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

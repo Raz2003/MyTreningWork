@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "789007764031",
+    "firebase_url": "https://exercisessportik.firebaseio.com",
+    "project_id": "exercisessportik",
+    "storage_bucket": "exercisessportik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789007764031:android:218af5c51d46a6c0b4868a",
+        "android_client_info": {
+          "package_name": "com.example.mytreningwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789007764031-g1385it3glpg2673g6vhubhaod544fro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mytreningwork",
+            "certificate_hash": "4b048526b60c3c714d72ff91697e8a2f3e4b3a75"
+          }
+        },
+        {
+          "client_id": "789007764031-b0hu02o069ntcmhoke69tvlt34248fh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGnvK2b09RgzHv5qj9bzcd_fqsenHy1jI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789007764031-b0hu02o069ntcmhoke69tvlt34248fh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
